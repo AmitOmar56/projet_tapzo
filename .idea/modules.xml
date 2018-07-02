@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://E:\Android_Project\my-tapzo-replica-new\MyTAPZOApp.iml" filepath="E:\Android_Project\my-tapzo-replica-new\MyTAPZOApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\Android_Project\my-tapzo-replica-new\my-tapzo-replica.iml" filepath="E:\Android_Project\my-tapzo-replica-new\my-tapzo-replica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-tapzo-replica-new.iml" filepath="$PROJECT_DIR$/my-tapzo-replica-new.iml" />
+    </modules>
+  </component>
+</project>

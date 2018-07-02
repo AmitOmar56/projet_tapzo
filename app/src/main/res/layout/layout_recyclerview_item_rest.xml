@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvDeal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ui_service_margin"
+        android:background="@drawable/bg_border_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_service_margin"
+            android:layout_marginRight="@dimen/ui_service_margin"
+            android:layout_toLeftOf="@+id/txtResultFrom"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_service_margin">
+
+            <TextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Restaurant Name"
+                android:textColor="#C2421F"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/borderLineName"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#C2421F"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="Offer Details"
+                android:textColor="#4B9632"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/txtOfferDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="4dp"
+                android:text="XXXX"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+
+        <com.cashgainapp.zen.custom.VerticalTextView
+            android:id="@+id/txtResultFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llMain"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/llMain"
+            android:background="@drawable/bg_store_name"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="PAYTM"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>

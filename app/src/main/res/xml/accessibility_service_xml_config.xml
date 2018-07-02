@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:accessibilityEventTypes="typeAllMask"
+                       android:accessibilityFeedbackType="feedbackGeneric"
+                       android:accessibilityFlags="flagDefault|flagIncludeNotImportantViews|flagReportViewIds|flagRequestEnhancedWebAccessibility|flagRetrieveInteractiveWindows"
+                       android:canRequestEnhancedWebAccessibility="true"
+                       android:canRetrieveWindowContent="true"
+                       android:description="@string/accessibility_service_description"
+                       android:notificationTimeout="0"
+                        android:packageNames="in.amazon.mShop.android.shopping, com.flipkart.android, com.snapdeal.main, net.one97.paytm, com.ebay.mobile, com.shopclues, com.shopping, com.application.zomato, com.mobikwik_new, com.freecharge.android, com.android.vending"/>
+
+    <!--android:packageNames="in.amazon.mShop.android.shopping, com.flipkart.android, com.snapdeal.main, net.one97.paytm, com.ebay.mobile, com.shopclues, com.shopping, com.application.zomato, com.mobikwik_new, com.freecharge.android, com.android.vending"-->
+    <!--
+        android:accessibilityEventTypes="typeWindowContentChanged|typeWindowStateChanged"-->

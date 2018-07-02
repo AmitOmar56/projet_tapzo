@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Shopping Assistance</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_explore">Explore</string>
+    <string name="my_news">News</string>
+    <string name="my_offers">Offers</string>
+    <string name="my_feed">Feed</string>
+    <string name="title_activity_cab_details_">Map</string>
+    <string name="title_activity_cab__details_">Map</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="gps_settings_disabled">GPS SETTINGS DISABLED</string>
+    <string name="choose_yes_on_dialog">You must have to accept changes on Location settings to get your current location.<!-- Now fill address manually or select any place on map.--></string>
+    <string name="location_access_denied">LOCATION ACCESS DENIED</string>
+    <string name="location_denied_marsh">You must have to allow this app to access device\'s location to get your current location. If you check "Never ask again", give permission to your app in app settings manually.</string>
+    <string name="device_not_supported">This device does not have Google Play Services</string>
+    <string name="title_activity_horoscope_screen"></string>
+    <string name="large_text">    </string>
+    <string name="accessibility_service_label">₹₹ Shopping Assistant ₹₹</string>
+    <string name="accessibility_service_description">Once this setting is enabled, the price comparison will be available at other shopping apps. \nTerms and Conditions:\nhttp://toc.cashgainapp.com\n\n\n\nPrivacy Policy:\nhttp://privacy.cashgainapp.com</string>
+    <string name="pre_pop_msg_coupons">Getting Best offers for you..</string>
+    <string name="pre_pop_msg_apps">Getting Similar apps for you..</string>
+    <string name="pre_pop_msg_price_comp">Getting Best offers for you..</string>
+    <string name="pre_pop_msg_generic">Getting Suggestions for you..</string>
+    <string name="post_pop_msg_coupons">We have offers &amp; coupons for you..</string>
+    <string name="post_pop_msg_apps">We have similar apps for you..</string>
+    <string name="post_pop_msg_price_comp">To get better price ! Click here..</string>
+    <string name="pop_msg_still_trying">We are still trying..\nYour patience is highly appreciated!</string>
+
+
+    <string name="title_activity_flight_screen"></string>
+    <string name="magazine">Select Date &amp; Time</string>
+    <string name="rs">\u20A8</string>
+    <string name="upcoming_rides">Upcoming Rides</string>
+    <string name="enter_valid_email">Enter valid Email</string>
+    <string name="Name_error">Please Enter Name</string>
+    <string name="please_fill_all_required_field">Please fill all required fields !</string>
+    <string name="Phone_error">Please Enter phone number</string>
+    <string name="Male_Number_error">Please Enter No.Of male</string>
+    <string name="enter_email">Enter Email-dd</string>
+    <string name="Phone_length_validation">Enter valid phone</string>
+</resources>

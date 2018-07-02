@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.axovel.mytapzoapp.activities.HomeScreenActivity"
+    tools:showIn="@layout/app_bar_home_screen">
+    <ScrollView
+        android:id="@+id/homeScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homeBackgroundcolor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/contentColor"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/cashBacktext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Earn upto Rs. 200 cashback "
+                            android:textSize="15dp"
+                            android:textColor="#1e0101"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add money to get extra cashback"
+                            android:paddingBottom="4dp"
+                            android:textSize="14dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/cashBacktext"/>
+
+                    </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/addMoneyButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_button_color_red"
+                            android:text="Add Money"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                           />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/contentColor">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </android.support.v4.view.ViewPager>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp">
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+
+                        app:tabIndicatorHeight="0dp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/homeScreenModuleComponent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <RadioGroup
+        android:id="@+id/dashboardRGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:background="@color/contentColor"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/homeScrollView">
+
+    <RadioButton
+            android:id="@+id/dashboardMyCarRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_explore"
+            android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+            android:text="@string/my_explore"
+            android:textColor="@color/my_buttomtext_color"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/dashboardMyOrderRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_news"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/my_news"
+            android:textColor="@color/my_buttomtext_color"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/dashboardHistoryRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_offer"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/my_offers"
+            android:textColor="@color/my_buttomtext_color"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/dashboardMoreRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_feed"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/my_feed"
+            android:textColor="@color/my_buttomtext_color"
+            android:textSize="12sp"/>
+
+
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+
+        android:id="@+id/accessibilityLinear"
+        android:clickable="true"
+        android:background="@color/contentColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.9"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:onClick="goTosettingFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ON Accessibility Services"
+            android:textColor="@color/Yellow"
+            android:paddingBottom="@dimen/dp_10dp"
+            android:paddingTop="@dimen/dp_10dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textSize="18sp"
+            android:background="@drawable/accessbility_buttton_shape"/>
+    </LinearLayout>
+
+</RelativeLayout>

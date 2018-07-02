@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.axovel.mytapzoapp.activities.FlightScreenActivity"
+    tools:showIn="@layout/activity_flight_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcfcfc">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/contentColor">
+
+            <!--android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow"-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/circle_idicater"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bg_black_light"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/niknameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/fromAddressText"
+                    android:layout_alignBottom="@+id/fromAddressText"
+                    android:layout_alignLeft="@+id/niknamedesText"
+                    android:layout_alignStart="@+id/niknamedesText"
+                    android:background="@drawable/shape_round_stroke"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="3dp"
+                    android:text="DEL"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/fromAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/circle_idicater"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/niknameText"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Origin" />
+
+                <ImageView
+                    android:id="@+id/circle_indicaterdes"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/bg_black_light"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/niknamedesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/destinationaddresstext"
+                    android:layout_alignBottom="@+id/destinationaddresstext"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:background="@drawable/shape_round_stroke"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="3dp"
+                    android:text="DEL"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/destinationaddresstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/niknameText"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Destination" />
+
+                <ImageView
+
+                    android:id="@+id/swapeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/up_down_icon" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="220dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="40dp"
+
+                    android:layout_marginTop="52dp"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="38dp"
+                    android:background="@android:color/darker_gray"></LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/datesheetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/cardView"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="#fcfcfc">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/departText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Depart"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/date_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/departText"
+                        android:layout_marginLeft="15dp"
+                        android:text="4"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/month_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/departText"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/date_id"
+                        android:text="Auguest"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/day_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/month_id"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/date_id"
+                        android:text="Friday"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="#fcfcfc">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/returnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Return"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/rdate_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/returnText"
+                        android:layout_marginLeft="15dp"
+                        android:text="8"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/rmonth_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/returnText"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/rdate_id"
+                        android:text="Auguest"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rday_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rmonth_id"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/rdate_id"
+                        android:text="Monday"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/traveLayoutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/linebelowdatesheet"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="#fcfcfc">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/travellerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Depart"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/countperson_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/travellerText"
+                        android:layout_marginLeft="15dp"
+                        android:text="1"
+                        android:textSize="38sp" />
+
+
+                    <TextView
+                        android:id="@+id/categry_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/countperson_id"
+                        android:text="Adult"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="#fcfcfc">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/travelleClassText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Class"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/classTypeText_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Economy"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="20sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linebelowdatesheet"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/datesheetLayout"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linebelowcategry"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/traveLayoutLayout"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchButtonLayput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linebelowcategry"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_button_round"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="SEARCH FLIGHTS"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flight_banner_Layput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/searchButtonLayput"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/banner_image_flite" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

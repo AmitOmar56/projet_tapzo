@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="@color/contentColor"
+    android:layout_margin="1dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/componentImageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flightes"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp">
+
+
+        <TextView
+                android:id="@+id/coponentNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/componentOffersTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Offers"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="10sp"
+/>
+    </LinearLayout>
+
+
+        </LinearLayout>

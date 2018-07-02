@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/contentColor">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/cabImageValue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.4"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cab_display_Name"
+            android:layout_weight="1"
+            android:text="Micro"
+            android:paddingTop="20dp"
+            android:textColor="@color/bg_black_light"
+
+            />
+        <TextView
+            android:id="@+id/cabAvilityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:textColor="@android:color/holo_green_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cabBasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/bg_black_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/cabMinTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5min"
+            android:lines="1"
+            android:textColor="@color/bg_black_light"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"></RelativeLayout>
+   </RelativeLayout>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/contentColor"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:onClick="backButton"
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/backIcon"
+            android:text="Popup Setting"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/contentColor"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amazon"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+
+                android:id="@+id/switchButtonamazon"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                app:theme="@style/Color1SwitchStyle"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flipkart"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonflipcart"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                app:theme="@style/Color1SwitchStyle"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Freecharge"
+                android:textColor="@color/bg_black_light"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonfreecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="120dp"
+                android:checked="false"
+                android:maxHeight="10dp"
+                android:minWidth="100dp"
+                app:theme="@style/Color1SwitchStyle"
+
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobikwik"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.v7.widget.SwitchCompat
+                app:theme="@style/Color1SwitchStyle"
+                android:id="@+id/switchButtonmobikwik"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonpaytm"
+                app:theme="@style/Color1SwitchStyle"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopclues"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonshopclues"
+                app:theme="@style/Color1SwitchStyle"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snapdeal"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonSnapdeal"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                app:theme="@style/Color1SwitchStyle"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+
+                android:id="@+id/switchButtonshopping"
+                android:layout_width="wrap_content"
+                app:theme="@style/Color1SwitchStyle"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vending"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+
+                android:id="@+id/switchButtonvending"
+                app:theme="@style/Color1SwitchStyle"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zomato"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/bg_black_light"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchButtonzomato"
+                app:theme="@style/Color1SwitchStyle"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxHeight="10dp"
+                android:width="120dp"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:shadowColor="@color/ActionBar_Green"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"  />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+
+
+
+</LinearLayout>

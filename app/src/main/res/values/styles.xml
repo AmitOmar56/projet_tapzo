@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="BtnTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/veiw_right_left_padding</item>
+        <item name="android:paddingBottom">@dimen/veiw_right_left_padding</item>
+        <item name="android:paddingLeft">@dimen/veiw_bottom_up_margin</item>
+        <item name="android:paddingRight">@dimen/veiw_bottom_up_margin</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/btn_selector_red</item>
+    </style>
+    <style name="TransparentProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="BtnThemePlain">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/veiw_right_left_padding</item>
+        <item name="android:paddingBottom">@dimen/veiw_right_left_padding</item>
+        <item name="android:paddingLeft">@dimen/veiw_bottom_up_margin</item>
+        <item name="android:paddingRight">@dimen/veiw_bottom_up_margin</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/btn_selector</item>
+
+    </style>
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">#1d5602</item>
+    </style>
+    <style name="IxigoFlightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#0097A7</item>
+        <item name="actionModeBackground">?attr/colorPrimary</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorAccent">#00A2B7</item>
+        <item name="android:windowBackground">@color/ifl_gray_light</item>
+</style>
+    11.
+
+</resources>

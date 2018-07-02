@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.axovel.mytapzoapp.activities.CabOntheWayScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.7">
+        <LinearLayout
+            android:id="@+id/upLayuot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="backButton"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/back_icon"/>
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Ola mini is on the way"
+                android:lines="1"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:onClick="cancelFun"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.9"
+        android:background="@color/contentColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/pickUpIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pickup_indicator"/>
+            <TextView
+                android:id="@+id/pickUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="pickup"
+                android:layout_marginLeft="10dp"
+                android:lines="1"
+                android:layout_toRightOf="@id/pickUpIndicator"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.9"
+        android:background="@color/contentColor">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/destinationIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/destination_indicator"/>
+            <TextView
+                android:id="@+id/destinationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="destination"
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/changeText"
+                android:layout_toRightOf="@id/destinationIndicator"/>
+            <TextView
+                android:id="@+id/changeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:padding="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_button_later_color"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height=".6dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.axovel.mytapzoapp.activities.Cab_Details_Activity" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height=".6dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.9"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/askImageView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <TextView
+            android:id="@+id/minuteawaytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="If you are late by few minutes you can ask the driver to wait"
+            android:paddingRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:background="@color/contentColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/userProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:src="@drawable/userprofile_icon"/>
+            <TextView
+                android:id="@+id/driverNmaeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Suresh"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="23dp"
+                android:textColor="@color/bg_black_light"
+                android:layout_toRightOf="@+id/userProfile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/bg_black_light"
+                android:id="@+id/cabNumber"
+                android:text="KA 00 AB 007"
+                android:layout_toRightOf="@+id/userProfile"
+                android:layout_below="@+id/driverNmaeText" />
+
+            <TextView
+                android:id="@+id/cabNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maruti Swift Dzire"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/bg_black_light"
+                android:layout_below="@+id/cabOtp"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="82062573"
+                android:textColor="@color/bg_black_light"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/cabOtp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:onClick="callDriverFun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.79">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CALL DRIVER"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:background="#418e02"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

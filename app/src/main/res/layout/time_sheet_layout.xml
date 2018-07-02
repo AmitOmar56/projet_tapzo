@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/time_shape_corner">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="03:40"
+            android:textColor="@color/bg_black_light"
+            android:textSize="15dp"
+            android:gravity="center"/>
+        <!--<TextView-->
+            <!--android:id="@+id/timeSession"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/bg_black_light"-->
+            <!--android:textSize="14dp"-->
+            <!--android:text="PM"/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

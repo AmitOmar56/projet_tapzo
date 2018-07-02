@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#33000000"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Transparent"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_close_btn"
+            android:padding="10dp"
+            android:drawableRight="@drawable/cross"
+            android:textSize="18sp" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_border_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <View
+                android:id="@+id/dialog_top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_fill_red"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Company Name"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtCouponDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/veiw_bottom_up_margin"
+                android:paddingTop="@dimen/veiw_bottom_up_margin"
+                android:text="Coupon Details"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtDecs"
+                style="@style/BtnTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:text="Coupon Description"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtBtnGetOffer"
+                android:background="@drawable/bg_fill_red"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/veiw_bottom_up_margin"
+                android:gravity="center"
+                android:text="Get Coupon Code"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout></ScrollView>

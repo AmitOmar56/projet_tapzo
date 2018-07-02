@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <View
+        android:id="@+id/dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/txtPriceCompAndClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:text="Price Comparison"
+        android:drawableRight="@drawable/cross"
+        android:background="@drawable/bg_border_white"
+        android:textColor="#000"
+        android:padding="@dimen/btnpadding"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:padding="@dimen/btnpadding"
+        android:background="@color/Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Searched across Flipkart, Amazon, Snapdeal &amp; 4 other apps to get the lowest price for you."
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/borderLineSave"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="5dp"
+        android:background="#FFF"
+        android:text="" />
+
+    <view
+        android:id="@+id/recycler_view_result"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+        android:background="@android:color/transparent"
+        android:dividerHeight="1dp" />
+
+
+</LinearLayout>

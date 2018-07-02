@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="backButton"
+            android:src="@drawable/cancel_icons" />
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/backIcon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Why do you want to cancel?"
+            android:textColor="@color/contentColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cabCancelImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_car_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <RadioGroup
+                android:id="@+id/serviceRGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/needMoreTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="Need More Time To Get Ready"
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/wanttoChange"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="Want to Change Drop Location"
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/expectedashorter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="Expected a Shorter Wait Time "
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/mydriverDenied"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="Driver Denied Duty"
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/myreson"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="My Reaso n is Not Listed"
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/forgetCoupan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="15dp"
+                    android:text="Forget To Apply Coupan Code"
+                    android:textColor="@color/Black"
+                    android:textSize="16dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_button_later_color"
+                        android:gravity="center"
+                        android:onClick="cancelRideFun"
+                        android:text="Cancel Ride"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_button_round"
+                        android:gravity="center"
+                        android:onClick="doNotCancelFun"
+                        android:text="Do Not Cancel"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

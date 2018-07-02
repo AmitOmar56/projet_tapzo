@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ui_service_margin"
+        android:background="@drawable/bg_border_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_service_margin"
+            android:layout_marginRight="@dimen/ui_service_margin"
+            android:layout_toLeftOf="@+id/txtResultFrom"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_service_margin">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Product Name"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/borderLineName"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/ui_service_margin">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="0px"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_cash_gain_head" />
+
+                <LinearLayout
+                    android:id="@+id/cvProductPrice"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtLableProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="₹ "
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_marginTop="4dp"
+                            android:paddingBottom="5dp"
+                            android:text="XXXXXX"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txtLableProductSaving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|top"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Save: ₹ "
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txtProductSaving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_marginTop="2dp"
+                            android:text="XXXXXX"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOffers"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/ui_service_margin">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.axovel.mytapzoapp.CustomViews.VerticalTextView
+            android:id="@+id/txtResultFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llMain"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/llMain"
+            android:background="@drawable/bg_store_name"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="STORE NAME"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>

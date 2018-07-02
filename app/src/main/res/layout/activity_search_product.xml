@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_business"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.axovel.mytapzoapp.activities.Cab_Details_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:background="@drawable/shape_search_button_round"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:layout_weight="5"
+                android:onClick="backButton"
+
+                android:paddingTop="7dp"
+                android:src="@drawable/arrow_back_black" />
+
+            <EditText
+                android:id="@+id/searchBarEText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Search a product here.."
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/Gray"
+                android:textSize="14sp">
+
+                <requestFocus />
+
+            </EditText>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="searchProductFun"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:layout_weight="5"
+                android:src="@drawable/search_icons" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingTop="15dp">-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/shape_white_bh_stroke"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:onClick="sortButton"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingBottom="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="SORT"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/color_light_blue"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="11sp"/>&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@drawable/shape_white_bh_stroke"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:text="FILTER"-->
+            <!--android:visibility="gone"-->
+            <!--android:textColor="@color/color_light_blue"-->
+            <!--android:textSize="11sp"/>-->
+
+    <!--</LinearLayout>-->
+    <!---->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contentColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recentSearchLinear"
+
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Recent Searches"
+                android:textSize="18sp"
+                android:textColor="@color/bg_black_light"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                    android:background="#f2e6e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/recentsearchItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/serachRecyclerVievLinear"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/productItemSearchText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#f2e6e6"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="searchItems"
+                        android:textColor="@color/bg_black_light"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/productSearchRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="Recent Searches"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/bg_black_light"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="20dp"/>-->
+    </LinearLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/bListRecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingTop="5dp"/>-->
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @author Umesh Chauhan - Axovel Private Limited -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring" >
+
+    <solid android:color="@color/red" />
+    <corners android:radius="2dp"/>
+    <padding
+        android:bottom="2dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="2dp" />
+
+</shape>

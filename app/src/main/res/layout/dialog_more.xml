@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_shape1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/burger_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/burger" />
+
+                <TextView
+                    android:id="@+id/burger_text"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Burger" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/north_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/north_indian" />
+
+                    <TextView
+                        android:id="@+id/northtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/north_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="North Indian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                    <ImageView
+                        android:id="@+id/cafe_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                         />
+
+                    <TextView
+                        android:id="@+id/cafetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cafe_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Cafe" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                    <ImageView
+                        android:id="@+id/snacks_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/snacks" />
+
+                    <TextView
+                        android:id="@+id/snacks_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/snacks_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="snacks" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                    <ImageView
+                        android:id="@+id/trending_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/trendingtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trending_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Trending" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/top_rated_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                         />
+
+                    <TextView
+                        android:id="@+id/top_ratedtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top_rated_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Top rated" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                        android:id="@+id/discount_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                    />
+
+                    <TextView
+                        android:id="@+id/discounttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/discount_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Discounts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                    <ImageView
+                        android:id="@+id/exotic_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                         />
+
+                    <TextView
+                        android:id="@+id/exotictext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/exotic_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Exotic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                    <ImageView
+                        android:id="@+id/no_min_order_id"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                         />
+
+                    <TextView
+                        android:id="@+id/no_min_ordertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/no_min_order_id"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Discounts" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

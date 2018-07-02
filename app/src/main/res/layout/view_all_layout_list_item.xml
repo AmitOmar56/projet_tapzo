@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/contentColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/titleappText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flipkart"
+
+            android:textSize="16sp"
+            android:textColor="@color/bg_black_light"
+
+            android:layout_marginLeft="10dp"
+
+
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"/>
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp"
+
+            android:layout_alignParentBottom="true"/>
+            />
+
+        </RelativeLayout>
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/priceText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Price"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_below="@+id/descriptionText"-->
+            <!--android:gravity="bottom"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"/>
+
+
+</LinearLayout>
+

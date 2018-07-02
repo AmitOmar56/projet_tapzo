@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.axovel.mytapzoapp.activities.RideLaterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/backIcon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/magazine"
+            android:textColor="@color/contentColor"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <io.mahendra.calendarview.widget.CalendarView
+    android:id="@+id/cal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    app:calendarBackgroundColor="@android:color/white"
+    app:calendarTitleTextColor="@color/white"
+    app:currentDayOfMonthColor="@color/bg_black_light"
+    app:dayOfWeekTextColor="@android:color/black"
+    app:disabledDayBackgroundColor="@android:color/transparent"
+    app:disabledDayTextColor="@color/Gray"
+    app:selectedDayBackgroundColor="@color/colorAccent"
+    app:titleLayoutBackgroundColor="@color/color_dark_sky_blue"
+    app:weekLayoutBackgroundColor="@android:color/transparent"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Depart Time"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/Blue"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
